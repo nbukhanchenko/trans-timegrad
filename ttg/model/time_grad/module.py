@@ -13,10 +13,8 @@
 
 from typing import List, Optional, Tuple
 
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-
+from diffusers import SchedulerMixin
+from diffusers.utils.torch_utils import randn_tensor
 from gluonts.core.component import validated
 from gluonts.itertools import prod
 from gluonts.model import Input, InputSpec
@@ -24,8 +22,9 @@ from gluonts.time_feature import get_lags_for_frequency
 from gluonts.torch.modules.feature import FeatureEmbedder
 from gluonts.torch.scaler import MeanScaler, NOPScaler, Scaler, StdScaler
 from gluonts.torch.util import repeat_along_dim, unsqueeze_expand
-from diffusers import SchedulerMixin
-from diffusers.utils.torch_utils import randn_tensor
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
 
 from ttg.util import lagged_sequence_values
 

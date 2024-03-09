@@ -11,12 +11,11 @@
 # express or implied. See the License for the specific language governing
 # permissions and limitations under the License.
 
+from gluonts.core.component import validated
+from gluonts.itertools import select
 from lightning import LightningModule
 import torch
 from torch.optim.lr_scheduler import ReduceLROnPlateau
-
-from gluonts.core.component import validated
-from gluonts.itertools import select
 
 from .module import TimeGradModel
 
