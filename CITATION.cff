@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using the following metadata
+title: TransTimeGrad
+authors: 
+- family-names: Bukhanchenko
+  given-names: Nikita
+license: MIT
+repository-code: https://github.com/nbukhanchenko/transtimegrad
+version: 1.0

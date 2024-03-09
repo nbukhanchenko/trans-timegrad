@@ -1,0 +1,30 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="trans-timegrad",
+    version="1.0",
+    description="Transformer Based Time-Grad Model",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Nikita Bukhanchenko",
+    author_email="nbukhanchenko@nes.ru",
+    url="https://github.com/nbukhanchenko/trans-timegrad",
+    license="MIT",
+    packages=find_packages(exclude=["tests"]),
+    include_package_data=True,
+    zip_safe=True,
+    python_requires=">=3.8",
+    install_requires=[
+        "diffusers==0.25.1",
+        "gluonts==0.14.3",
+        "holidays",
+        "torch>=1.8.0",
+        "lightning==2.1.3",
+        "matplotlib",
+        "numpy==1.23.5",
+        "pandas==2.2.0",
+        "protobuf~=3.20.3",
+        "seaborn==0.13.1",
+    ],
+    tests_require=["flake8", "pytest"],
+)
