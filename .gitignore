@@ -108,3 +108,4 @@ wandb/
 .idea/
 runs/
 .vscode/
+.DS_store
