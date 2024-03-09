@@ -1,8 +1,7 @@
 from typing import List
 
-import torch
-
 from gluonts.torch.util import slice_along_dim
+import torch
 
 
 def lagged_sequence_values(
