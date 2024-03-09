@@ -13,7 +13,7 @@
 
 from typing import Any, Dict, Iterable, List, Optional
 
-import torch
+from diffusers import SchedulerMixin
 from gluonts.core.component import validated
 from gluonts.dataset.common import Dataset
 from gluonts.dataset.field_names import FieldName
@@ -41,7 +41,7 @@ from gluonts.transform import (
     VstackFeatures,
 )
 from gluonts.transform.sampler import InstanceSampler
-from diffusers import SchedulerMixin
+import torch
 
 from .lightning_module import TimeGradLightningModule
 
